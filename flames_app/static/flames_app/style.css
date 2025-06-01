@@ -1,0 +1,32 @@
+
+body.love-bg {
+    background: linear-gradient(to right, #ffb6c1, #ffe4e1);
+    font-family: 'Comic Sans MS', cursive;
+    text-align: center;
+    padding: 50px;
+}
+
+.container {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 0 20px pink;
+}
+
+input, button {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 12px;
+    border: none;
+}
+
+button {
+    background: hotpink;
+    color: white;
+    font-weight: bold;
+}
+
+.result {
+    font-size: 2em;
+    color: crimson;
+}

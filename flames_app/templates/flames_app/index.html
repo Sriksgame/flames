@@ -1,0 +1,21 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FLAMES Love Calculator</title>
+    <link rel="stylesheet" href="{% static 'flames_app/style.css' %}">
+</head>
+<body class="love-bg">
+    <div class="container">
+        <h1>💘 FLAMES Love Calculator 💘</h1>
+        <form action="{% url 'result' %}" method="post">
+            {% csrf_token %}
+            <input type="text" name="name1" placeholder="Your Name" required>
+            <input type="text" name="name2" placeholder="Their Name" required>
+            <button type="submit">Find Out ❤️</button>
+        </form>
+    </div>
+</body>
+</html>
